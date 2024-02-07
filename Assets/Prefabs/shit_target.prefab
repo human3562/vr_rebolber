@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8446553871800226605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9111907199733074327}
+  - component: {fileID: 5322169298849170994}
+  - component: {fileID: 7942330552230998776}
+  - component: {fileID: 8446553871800226606}
+  - component: {fileID: 8789133316064341984}
+  m_Layer: 0
+  m_Name: shit_target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9111907199733074327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446553871800226605}
+  m_LocalRotation: {x: -0.79052365, y: 0.39143032, z: -0.38284755, w: 0.27437624}
+  m_LocalPosition: {x: -7.0806804, y: 0.64657074, z: 2.6877604}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -7.706, y: 124.15, z: -123.226}
+--- !u!33 &5322169298849170994
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446553871800226605}
+  m_Mesh: {fileID: -2124705421725058983, guid: 21ec59ef4a4d33d4c9ef3c52c063e9a4, type: 3}
+--- !u!23 &7942330552230998776
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446553871800226605}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -6478536213147159724, guid: 21ec59ef4a4d33d4c9ef3c52c063e9a4, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8446553871800226606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446553871800226605}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 0.05935769}
+  m_Center: {x: -1.061401e-10, y: 3.0325742e-11, z: -0.00050878135}
+--- !u!114 &8789133316064341984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446553871800226605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecace3545a3d114cb8b6b4d7059024b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEffect: {fileID: 182741974024760117, guid: 09fd1ea5c84f5634bb4567066222425f, type: 3}
+  OnTargetShot:
+    m_PersistentCalls:
+      m_Calls: []
+  hitSounds:
+  - {fileID: 8300000, guid: 45feb947f8521b54382714fd1cb55e20, type: 3}
+  - {fileID: 8300000, guid: 9fe2476e8cb4ae144bdcf5d7140e3317, type: 3}
+  - {fileID: 8300000, guid: 5b7f46b336efc4d4aa5ef2a55c0478e9, type: 3}
+  - {fileID: 8300000, guid: df5f7846033597d48ae35976d301df65, type: 3}
+  - {fileID: 8300000, guid: 7f944433fed802148839a0b8530eb87f, type: 3}
+  extra: {fileID: 8300000, guid: 48ba78eeb22127642931f753a56c76fd, type: 3}
